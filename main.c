@@ -14,7 +14,7 @@ int main()
         scanf (" %c", &operation);
         if (operation == 'r' || operation == 'e' )
         {
-            printf("Veuillez saisir un nombre \n");
+            printf("Veuillez saisir un nombre, saisissez '0' si vous voulez utiliser le resultat précédent. \n");
             scanf(" %f", &a);
             if (a == 0)
             {
@@ -24,7 +24,7 @@ int main()
         }
         else if (operation == 'c' || operation == 's')
         {
-            printf("Saisissez si votre angle est en degre 'd' ou en radians 'r', puis saisissez un angle \n");
+            printf("Saisissez si votre angle est en degre 'd' ou en radians 'r', puis saisissez un angle, saisissez '0' si vous voulez utiliser le resultat précédent \n");
             scanf(" %c", &angle);
             scanf(" %f", &a);
             if (a == 0)
@@ -34,7 +34,7 @@ int main()
         }
         else
         {
-            printf("Veuillez saisir deux nombres \n");
+            printf("Veuillez saisir deux nombres, saisissez '0' pour le premier nombre si vous voulez utiliser le resultat précédent\n");
             scanf(" %f", &a);
             scanf(" %f", &b);
             if (a == 0)
@@ -89,3 +89,4 @@ int main()
     return 0;
 
 }
+
