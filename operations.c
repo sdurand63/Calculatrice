@@ -26,7 +26,8 @@ void division(float* a, float* b)
     }
     else
     {
-        printf("error");
+        printf("error\n");
+        *a = 0;
     }
 }
 
@@ -37,7 +38,16 @@ void exponential(float* a)
 
 void racine(float* a)
 {
-    *a = sqrt(*a);
+    if (*a >= 0)
+    {
+        *a = sqrt(*a);
+    }
+    else
+    {
+        printf("error\n")
+        *a = 0;
+    }
+
 }
 
 void cosinus (float* a, char* angle)
@@ -52,7 +62,8 @@ void cosinus (float* a, char* angle)
     }
     else
     {
-        printf("error");
+        printf("error\n");
+        *a = 0;
     }
 }
 
@@ -68,7 +79,8 @@ void sinus (float* a, char* angle)
     }
     else
     {
-        printf("error");
+        printf("error\n");
+        *a = 0;
     }
 }
 
