@@ -3,42 +3,72 @@
 #include <math.h>
 #include "operations.h"
 
-void addition(int* a, int b)
+void addition(float* a, float b)
 {
     *a += b;
 }
 
-void soustraction(int* a, int b)
+void soustraction(float* a, float b)
 {
     *a -= b;
 }
 
-void multiplication(int* a, int b)
+void multiplication(float* a, float b)
 {
     *a *= b;
 }
 
-void division(int* a, int* b)
+void division(float* a, float* b)
 {
-    if (b != 0)
+    if (*b != 0)
     {
-        int q = *a / *b;
-        *b = q;
-        int r = *a % *b;
-        *a = r;
+        *a /= *b;
     }
     else
     {
-        return ("error");
+        printf("error");
     }
 }
 
-void ex(int* a)
+void exponential(float* a)
 {
     *a = exp(*a);
 }
 
-void racine(int *a)
+void racine(float* a)
 {
     *a = sqrt(*a);
 }
+
+void cosinus (float* a, char* angle)
+{
+    if (*angle == 'd')
+    {
+        *a = cosf(*a*3.14159265358979/180);
+    }
+    else if (*angle == 'r')
+    {
+        *a = cosf(*a);
+    }
+    else
+    {
+        printf("error");
+    }
+}
+
+void sinus (float* a, char* angle)
+{
+    if (*angle == 'd')
+    {
+        *a = sinf(*a*3.14159265358979/180);
+    }
+    else if (*angle == 'r')
+    {
+        *a = sinf(*a);
+    }
+    else
+    {
+        printf("error");
+    }
+}
+
