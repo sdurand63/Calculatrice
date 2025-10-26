@@ -44,7 +44,7 @@ void racine(float* a)
     }
     else
     {
-        printf("error\n")
+        printf("error\n");
         *a = 0;
     }
 
@@ -83,4 +83,5 @@ void sinus (float* a, char* angle)
         *a = 0;
     }
 }
+
 
