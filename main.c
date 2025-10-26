@@ -8,13 +8,13 @@ int main()
     char fin;
     char angle;
     char operation;
-    while (fin != 'y')
+    while (fin != 'n')
     {
         printf("Quelle operation voulez-vous effectuer : + , - , * , / , 'r' pour racine, 'e' pour exponentielle, 'c' pour cosinus, 's' pour sinus ? \n ") ;
         scanf (" %c", &operation);
         if (operation == 'r' || operation == 'e' )
         {
-            printf("Veuillez saisir un nombre, saisissez '0' si vous voulez utiliser le resultat précédent. \n");
+            printf("Veuillez saisir un nombre, saisissez '0' si vous voulez utiliser le resultat precedent. \n");
             scanf(" %f", &a);
             if (a == 0)
             {
@@ -24,7 +24,7 @@ int main()
         }
         else if (operation == 'c' || operation == 's')
         {
-            printf("Saisissez si votre angle est en degre 'd' ou en radians 'r', puis saisissez un angle, saisissez '0' si vous voulez utiliser le resultat précédent \n");
+            printf("Saisissez si votre angle est en degre 'd' ou en radians 'r', puis saisissez un angle, saisissez '0' si vous voulez utiliser le resultat precdent \n");
             scanf(" %c", &angle);
             scanf(" %f", &a);
             if (a == 0)
@@ -34,7 +34,7 @@ int main()
         }
         else
         {
-            printf("Veuillez saisir deux nombres, saisissez '0' pour le premier nombre si vous voulez utiliser le resultat précédent\n");
+            printf("Veuillez saisir deux nombres, saisissez '0' pour le premier nombre si vous voulez utiliser le resultat prcdent\n");
             scanf(" %f", &a);
             scanf(" %f", &b);
             if (a == 0)
@@ -82,11 +82,12 @@ int main()
                 break;
         }
         res = a;
-        printf("\n Voulez vous arreter ? y/n \n");
+        printf("\n Voulez vous continuer ? y/n \n");
         scanf(" %c",&fin);
     }
 
     return 0;
 
 }
+
 
